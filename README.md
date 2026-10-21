@@ -34,12 +34,12 @@ Every submission includes `invitationSide: "bride"`. `google-apps-script/Code.gs
 Upload the folder (or push to GitHub) and import it in Vercel: framework preset "Other", no build command. Use a **new** Vercel project/domain for this bride-side site, then run `set-site-url.py` with that address.
 
 ## Content summary
-- Hero: Jessica Dsouza & Shejil Shah (bride first), Friday 18 December 2026, Barka, Sultanate of Oman. The S&J monogram on the door cover and hero is unchanged.
+- Hero: Jessica Dsouza & Shejil Shah (bride first), Friday 18 December 2026, Barka, Sultanate of Oman. The monogram reads J & S on the door cover, the hero and the WhatsApp image.
 - Family: hosted by Mr. Thomas Dsouza & Mrs. Aslita Dsouza; groom introduced as son of Mr. Shaji Jamal Rawther & Mrs. Shamla Shaji.
 - Details: Nikkah & Wedding Ceremonies, 5:00 PM Onwards; countdown targets 2026-12-18 17:00 Asia/Muscat (UTC+4).
 - Venue: Nasayem Al Khair, Barka; button uses the original Google Maps link.
 - Footer: With Best Compliments, Rebecca.
-- WhatsApp image: `assets/og-bride-royal-muscat.jpg` (1200x630, same Royal Muscat artwork, names bride-first). New filename so cached previews are not reused.
+- WhatsApp image: `assets/og-bride-js.jpg` (1200x630, same Royal Muscat artwork, names bride-first). New filename so cached previews are not reused.
 
 ## Royal Muscat theme / door-opening cover
-Unchanged from the groom-side build: `assets/opening-poster.jpg` + `assets/opening-doors.mp4` (not modified), `#opening` block in `index.html`, cover styles at the end of `styles.css`, cover logic first in `script.js`. Footer video files are unchanged. `assets/music.mp3` plays after opening as before.
+Same as the groom-side build except the S & J letters on the doors were swapped to J & S: `assets/opening-poster.jpg` + `assets/opening-doors.mp4` (frames re-edited and re-encoded; poster taken from the new first frame; both URLs carry `?v=js` to bypass old caches), `#opening` block in `index.html`, cover styles at the end of `styles.css`, cover logic first in `script.js`. Footer video files are unchanged. `assets/music.mp3` plays after opening as before.
