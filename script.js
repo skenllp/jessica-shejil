@@ -116,7 +116,7 @@
   // BRIDE-SIDE SITE: RSVP_URL is deliberately NOT the groom-side URL. Paste the bride-side web app URL here (see README).
   // Every submission is tagged invitationSide = 'bride' so it can never be mistaken for a groom-side response.
   const INVITATION_SIDE = 'bride';
-  const RSVP_URL = 'PASTE_BRIDE_SIDE_WEB_APP_URL_HERE';
+  const RSVP_URL = 'https://script.google.com/macros/s/AKfycbw9ECjT9uHZfAOKpsQXfWjskYqtktYRQC4WVVJbMdb5B8jPi-S092DKJ8UcMnCvTA/exec';
   const rsvpConfigured = /^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(RSVP_URL);
   const form = $('#rsvpForm'), done = $('#rsvpDone'), btn = $('#sendBtn'), gw = $('#guestsWrap');
   let sending = false;
