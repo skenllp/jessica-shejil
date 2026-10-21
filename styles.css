@@ -1,0 +1,104 @@
+:root{--ivory:#F7F0E4;--limestone:#D9C3A3;--gold:#A78350;--espresso:#504335;--charcoal:#282D27;--mute:#6b5c49}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden}
+body{background:#E9E4DB;color:var(--espresso);font-family:'Manrope',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.serif{font-family:'Cormorant Garamond',serif}.cinzel{font-family:'Cinzel',serif;font-weight:400}.script{font-family:'Great Vibes',cursive;font-weight:400}
+.arabic{font-family:'Amiri',serif;color:var(--gold);font-size:clamp(1.15rem,5.6vw,1.6rem);line-height:1.5}
+.it{font-style:italic}.gold{color:var(--gold)}.mute{color:var(--mute)}
+.cap{font-size:.62rem;letter-spacing:.26em;color:var(--espresso);font-weight:500}
+.rule{height:1px;width:56px;background:var(--gold);margin:14px auto}
+.hd{font-size:clamp(1.1rem,5.4vw,1.5rem);letter-spacing:.12em;text-transform:uppercase;color:var(--espresso);line-height:1.25}
+.mid{font-size:clamp(2rem,10vw,2.8rem);line-height:1.1}
+.panel{position:relative;max-width:520px;margin:0 auto;aspect-ratio:941/1672;overflow:hidden;background:var(--ivory)}
+.panel.hero{min-height:100svh}
+.panel.flow{aspect-ratio:auto;min-height:min(177.7vw,924px)}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.flip{transform:scaleX(-1)}
+.txt{position:absolute;left:14%;right:14%;text-align:center}
+.flow .txt{position:relative;left:auto;right:auto;padding:var(--pt,40%) 0 12%}
+/* hero */
+.mono{display:block;width:clamp(38px,10vw,50px);height:auto;margin:0 auto}
+.hline{height:1px;width:64px;background:var(--gold);margin:10px auto}
+.en{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(.66rem,3vw,.82rem);line-height:1.25;color:var(--espresso);margin-top:2px}
+.names{font-family:'Great Vibes',cursive;font-weight:400;color:var(--charcoal);font-size:clamp(2rem,9.5vw,3rem);line-height:1.2;margin-top:clamp(8px,2.4vw,14px);letter-spacing:.01em}
+.names span{display:block}.names .amp{font-family:'Great Vibes',cursive;font-weight:400;font-style:normal;font-size:.75em;line-height:1.4;color:var(--gold);letter-spacing:0}
+.dateblock{color:var(--charcoal)}
+/* family */
+.fam{font-family:'Cormorant Garamond',serif;font-size:clamp(.88rem,4vw,1.1rem);line-height:1.28;color:var(--charcoal)}
+.nm{font-weight:600;font-size:1.12em}.amp2{font-size:.95em}
+.gname{font-family:'Great Vibes',cursive;font-weight:400;font-size:clamp(2.2rem,11vw,3.4rem);line-height:1.15;color:var(--charcoal)}
+/* details */
+.day{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(3.6rem,19vw,5.4rem);line-height:1;color:var(--charcoal)}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:22px}
+.count div{border-top:1px solid rgba(167,131,80,.7);padding-top:8px}
+.count b{display:block;font:500 clamp(1.4rem,6.6vw,1.9rem)/1 'Cormorant Garamond',serif;font-variant-numeric:tabular-nums;color:var(--charcoal)}
+.count span{display:block;margin-top:4px;font-size:.55rem;letter-spacing:.16em;text-transform:uppercase;color:var(--espresso)}
+.pin{width:28px;height:28px;color:var(--gold);display:block;margin:0 auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 30px;border:1px solid var(--gold);background:transparent;color:var(--espresso);font:500 .72rem 'Manrope',sans-serif;letter-spacing:.22em;text-decoration:none;cursor:pointer;border-radius:0;transition:background .3s,color .3s}
+.btn:hover,.btn:focus-visible{background:var(--espresso);color:var(--ivory);border-color:var(--espresso)}.btn:disabled{opacity:.6;cursor:default}
+.btn.solid{background:var(--espresso);color:var(--ivory);border-color:var(--espresso)}.btn.solid:hover,.btn.solid:focus-visible{background:var(--charcoal)}
+/* form */
+form{text-align:left}form label,legend{display:block;font-size:.62rem;letter-spacing:.18em;color:var(--espresso);font-weight:500;margin-top:10px}
+form input:not([type=radio]),select,textarea{display:block;width:100%;margin-top:4px;background:rgba(247,240,228,.4);border:1px solid rgba(167,131,80,.85);border-radius:0;padding:10px;min-height:44px;font:400 1.1rem 'Cormorant Garamond',serif;color:var(--charcoal);outline:none;resize:none}
+form input:focus,select:focus,textarea:focus{border-color:var(--espresso);box-shadow:0 0 0 1px var(--espresso)}
+fieldset{border:0;padding:0;min-width:0}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.choice{margin:0!important;display:flex;align-items:center;justify-content:center;min-height:48px;padding:0 6px;text-align:center;border:1px solid rgba(167,131,80,.85);cursor:pointer;font:500 .95rem/1.15 'Cormorant Garamond',serif!important;letter-spacing:0!important;color:var(--charcoal)!important;background:rgba(247,240,228,.4)}
+.choice input{position:absolute;opacity:0}.choice:has(input:checked){background:var(--espresso);color:var(--ivory)!important;border-color:var(--espresso)}
+.choice:has(input:focus-visible){outline:2px solid var(--gold);outline-offset:2px}
+.err{color:#8a1f1f;font-size:.76rem;margin-top:4px}.hp,.sr{position:absolute;left:-9999px}
+#rsvpDone{text-align:center;font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--charcoal)}#rsvpDone .hd{margin-bottom:8px}
+/* hero reveal: CSS only. Held back while the door cover is up (html.is-opening), then a short ~1 s fade-in as the cover dissolves.
+   The S&J monogram already appears on the doors, so the hero copy is hidden (its space is kept so nothing shifts). */
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes draw{from{opacity:0;transform:scaleX(0)}to{opacity:1;transform:none}}
+.hero .mono{visibility:hidden}
+.hline{animation:draw .5s ease-out .1s both}
+.bism{animation:fade .6s ease-out .2s both}
+.names,.dateblock{animation:up .7s ease-out .35s both}
+.is-opening .hline,.is-opening .bism,.is-opening .names,.is-opening .dateblock{animation:none;opacity:0}
+@media (prefers-reduced-motion:reduce){.hline,.bism,.names,.dateblock{animation:none}html{scroll-behavior:auto}.vid{display:none}}
+@media (min-width:521px){.panel{box-shadow:0 0 0 1px rgba(80,67,53,.1)}}
+
+/* ===== Royal Muscat door-opening cover ===== */
+main:focus{outline:none}
+html.is-locked{overflow:hidden;scrollbar-gutter:stable;background:#c09468}
+html.is-locked body{overflow:hidden}
+.opening{--oh:100vh;--fade:500ms;position:fixed;inset:0;z-index:1000;overflow:hidden;background:#c09468;touch-action:none;overscroll-behavior:none;opacity:1;transition:opacity var(--fade) ease}
+@supports (height:100dvh){.opening{--oh:100dvh}}
+.opening.is-leaving{opacity:0;pointer-events:none}
+/* Blurred copy of the poster fills any space around the portrait stage (beside it on desktop, above/below it on tall phones) */
+.open-backdrop{position:absolute;inset:-8%;width:116%;height:116%;object-fit:cover;filter:blur(34px);pointer-events:none;user-select:none}
+/* One 9:16 rectangle (the artwork's ratio): poster and video fill it identically, so there is no scale or position change at hand-off.
+   The whole artwork is always visible (doors, monogram, lanterns): it fits the viewport and is capped at the native 720x1280. */
+.open-stage{--w:min(100vw,calc(var(--oh)*9/16),720px);--h:calc(var(--w)*16/9);position:absolute;left:50%;top:50%;width:var(--w);height:var(--h);margin:calc(var(--h)/-2) 0 0 calc(var(--w)/-2);box-shadow:0 0 70px rgba(70,45,15,.35);background:#e8d3b0}
+.open-layer{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;pointer-events:none;user-select:none;-webkit-user-drag:none}
+.open-video{z-index:1}
+.open-poster{z-index:2}
+.open-stage.is-playing .open-poster{opacity:0;transition:opacity .12s linear}
+.open-video::-webkit-media-controls,.open-video::-webkit-media-controls-start-playback-button{display:none!important}
+/* "Tap to Open" button — centered near the bottom of the stage */
+.open-hit{position:absolute;z-index:3;left:50%;bottom:9%;transform:translateX(-50%);width:auto;height:auto;min-width:44px;min-height:44px;margin:0;padding:0;border:0;background:transparent;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;appearance:none;-webkit-appearance:none}
+.open-hit-label{display:inline-flex;align-items:center;gap:8px;padding:11px 24px;border:1px solid rgba(255,245,220,.65);border-radius:999px;background:rgba(20,15,8,.38);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#f5ecd8;font:500 .68rem 'Manrope',sans-serif;letter-spacing:.22em;text-transform:uppercase;white-space:nowrap;transition:background .25s,border-color .25s;box-shadow:0 2px 18px rgba(0,0,0,.28)}
+.open-hit-chevron{width:13px;height:13px;opacity:.8;flex-shrink:0;transform:rotate(-90deg)}
+@keyframes open-hit-pulse{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(5px)}}
+.open-hit{animation:open-hit-pulse 2s ease-in-out infinite}
+@media (hover:hover){.open-hit:hover .open-hit-label{background:rgba(20,15,8,.6);border-color:rgba(255,245,220,.9)}}
+.open-hit:focus-visible{outline:none}.open-hit:focus-visible .open-hit-label{outline:2px solid #d4a84b;outline-offset:3px;box-shadow:0 0 0 4px rgba(212,168,75,.25)}
+.open-hit:disabled{cursor:default;pointer-events:none;animation:none;opacity:0;transition:opacity .3s}
+@media (prefers-reduced-motion:reduce){.open-hit{animation:none}}
+
+/* ===== Music controller ===== */
+#musicBtn{position:fixed;bottom:20px;right:20px;z-index:900;display:flex;align-items:center;gap:8px;padding:8px 14px 8px 10px;background:rgba(40,45,39,.82);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(167,131,80,.5);border-radius:999px;color:var(--ivory);cursor:pointer;font:500 .65rem 'Manrope',sans-serif;letter-spacing:.18em;text-transform:uppercase;transition:background .25s,border-color .25s,opacity .4s,transform .4s;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#musicBtn[hidden]{display:none}
+#musicBtn:hover,#musicBtn:focus-visible{background:rgba(40,45,39,.96);border-color:var(--gold)}
+#musicBtn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+#musicBtn svg{width:16px;height:16px;fill:var(--ivory);flex-shrink:0}
+/* Show pause icon when playing, play icon when paused */
+#musicBtn .ic-pause{display:none}
+#musicBtn[aria-pressed="true"] .ic-play{display:none}
+#musicBtn[aria-pressed="true"] .ic-pause{display:block}
+.music-label{line-height:1}
+/* Subtle pulse ring while playing */
+@keyframes pulse-ring{0%{box-shadow:0 4px 14px rgba(0,0,0,.35),0 0 0 0 rgba(167,131,80,.5)}70%{box-shadow:0 4px 14px rgba(0,0,0,.35),0 0 0 8px rgba(167,131,80,0)}100%{box-shadow:0 4px 14px rgba(0,0,0,.35),0 0 0 0 rgba(167,131,80,0)}}
+#musicBtn[aria-pressed="true"]{animation:pulse-ring 2.4s ease-out infinite}
+@media (prefers-reduced-motion:reduce){#musicBtn[aria-pressed="true"]{animation:none}}
